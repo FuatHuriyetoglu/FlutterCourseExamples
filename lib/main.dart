@@ -1,21 +1,34 @@
 
-
-
 void main() {
-  print('a'.isNotEmpty);
-  int i = 1;
-  print(1.isEven);
-  print(i);
-  String maintekcal;
-  maintekcal = 'main ' + 'tekrar ' + 'çalıştı';
+ var mesajSayisi =2;
+ if(mesajSayisi== 0){
+  print("yeni mesajınız yoktur...");
+ } else if (mesajSayisi == 1){
+   print("1 yeni mesajınız var");
+  }else if(mesajSayisi== 2){
+   print("2 adet mesajınız var");
+  } else {
+   print("çok mesajınız var ");
+  }
 
-  print(maintekcal);
-  int index = maintekcal.indexOf("ar");
-  print(index);
+ switch (mesajSayisi){
+  case 0:
+  print("sıfır mesaj");
+  break;
+  case 1:
+  print("1 mesaj");
+  break;
+  case 2:
+   print("2 mesaj");
+   break;
+  default :
+   print ("çok mesaj");
+ }
 
-  print('main bitmek üzere');
 
 
-
+ print ("$mesajSayisi  adet okunmamış mesajınız var");
 
 }
+
+
